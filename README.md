@@ -1,75 +1,31 @@
-# Nuxt 4 Minimal Starter
+# cursor-run
 
-Nuxt 4 + Vue 3.5 + TypeScript + Tailwind + Pinia + VueUse + Zod. See [Nuxt 4 docs](https://nuxt.com/docs/4.x/getting-started/introduction).
+Nuxt 4 + Vue 3.5 + TypeScript + Tailwind + Pinia + VueUse + Zod. Minimal landing-style app with a custom theme and dark mode.
+
+## How it works
+
+- **Pages:** `app/pages/` — `index.vue` is the landing (hero, features, CTA); `demo.vue` is a theme demo. Both use the default layout.
+- **Layout:** `app/layouts/default.vue` — header with site name, “demo” link, and dark-mode toggle. Renders the page via `<slot />`.
+- **Theme:** `app/plugins/theme.client.ts` applies light/dark before first paint (localStorage + system preference). `useDarkMode()` in the layout drives the toggle and persists choice.
+- **Styling:** Tailwind via `app/assets/css/main.css`; design tokens (e.g. lavender accent) and dark variants live there. Plus Jakarta Sans via `@nuxt/fonts`.
+- **Components:** Reusable UI under `app/components/` (e.g. `AppButton`, `AppLink`, `AppHeading`, `AppCard`) plus landing blocks (`LandingHero`, `LandingFeatures`, `LandingCta`).
+
+Source lives under `app/` (see `nuxt.config.ts` `srcDir`).
 
 ## Setup
 
-Make sure to install dependencies:
-
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Commands
 
-Start the development server on `http://localhost:3000`:
+| Command   | Description                    |
+| --------- | ------------------------------ |
+| `pnpm dev`      | Dev server at http://localhost:3000 |
+| `pnpm build`    | Production build               |
+| `pnpm preview`  | Preview production build       |
+| `pnpm generate` | Static site generation         |
+| `pnpm format`   | Prettier format                |
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+See [Nuxt 4 docs](https://nuxt.com/docs/4.x/getting-started/introduction) and [deployment](https://nuxt.com/docs/getting-started/deployment).
