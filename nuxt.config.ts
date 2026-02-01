@@ -5,4 +5,12 @@ export default defineNuxtConfig({
   srcDir: 'app',
 
   modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon', '@nuxt/image', '@nuxtjs/tailwindcss', '@pinia/nuxt', '@vueuse/nuxt'],
+
+  tailwindcss: {
+    cssPath: '~/assets/css/main.css',
+  },
+
+  fonts: {
+    families: [{ name: 'Plus Jakarta Sans', provider: 'google' }],
+  },
 });

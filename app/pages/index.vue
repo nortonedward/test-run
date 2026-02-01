@@ -1,8 +1,40 @@
 <template>
-  <div class="mx-auto max-w-3xl">
-    <h1 class="mb-2 text-2xl font-bold text-gray-900 sm:text-3xl">Welcome</h1>
-    <p class="text-gray-600">Nuxt 4 + Vue 3.5 + TypeScript + Tailwind + Pinia + VueUse + Zod.</p>
+  <div>
+    <LandingHero
+      headline="getting started"
+      subtext="working on this app! not sure where we're going yet. nuxt + vue + tailwind for now."
+      :primary-cta="{ label: 'get started', to: '#' }"
+      :secondary-cta="{ label: 'theme demo', to: '/demo' }"
+    />
+    <LandingFeatures
+      heading="what's in the stack"
+      subtext="stuff i'm using so far."
+      :features="features"
+    />
+    <LandingCta
+      headline="that's it for now"
+      subtext="more to come maybe."
+      :cta="{ label: 'repo', href: '#' }"
+    />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const features = [
+  {
+    title: 'fast',
+    description:
+      'vite + nuxt. hot reload, decent build times. feels good so far.',
+  },
+  {
+    title: 'typed',
+    description:
+      'typescript + zod. trying to keep things type-safe without going overboard.',
+  },
+  {
+    title: 'theme',
+    description:
+      'custom theme with dark mode. still tweaking the lavender.',
+  },
+];
+</script>

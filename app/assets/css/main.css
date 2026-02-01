@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme: Synthetic Naturalism — light (default) */
+:root {
+  --color-background: #fafaf9;
+  --color-background-top: #f5f4f2;
+  --color-surface: #ffffff;
+  --color-foreground: #1c1917;
+  --color-muted: #57534e;
+  --color-border: #e7e5e4;
+  --color-accent: #8b7bb8;
+  --color-accent-top: #9d8dc4;
+  --color-accent-hover: #6d5a9a;
+  --color-accent-hover-top: #7d6dad;
+  --color-success: #6b7c5c;
+}
+
+/* Dark Mode 2.0: deep charcoal, no pure black */
+.dark {
+  --color-background: #171717;
+  --color-background-top: #1c1c1c;
+  --color-surface: #262626;
+  --color-foreground: #fafaf9;
+  --color-muted: #a8a29e;
+  --color-border: #404040;
+  --color-accent: #c4b5fd;
+  --color-accent-top: #ddd6fe;
+  --color-accent-hover: #a78bfa;
+  --color-accent-hover-top: #c4b5fd;
+  --color-success: #86a878;
+}
+
+/* Subtle page gradient for depth */
+.theme-page {
+  background: linear-gradient(
+    180deg,
+    var(--color-background-top) 0%,
+    var(--color-background) 25%,
+    var(--color-background) 100%
+  );
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
