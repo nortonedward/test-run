@@ -2,34 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Theme: Synthetic Naturalism — light (default) */
+/*
+  Theme: Sumi + washi + 朱 (shu)
+  One bold move: ink, paper, vermillion. Torii / hinomaru / lacquer.
+  No purple, no green — just the classic Japanese graphic.
+  References: 墨 sumi, 和紙 washi, 朱色 shu-iro (cinnabar), 蘇芳 su'ō (sappanwood), 柿渋 kakishibu (persimmon).
+*/
 :root {
-  --color-background: #fafaf9;
-  --color-background-top: #f5f4f2;
-  --color-surface: #ffffff;
-  --color-foreground: #1c1917;
-  --color-muted: #57534e;
-  --color-border: #e7e5e4;
-  --color-accent: #8b7bb8;
-  --color-accent-top: #9d8dc4;
-  --color-accent-hover: #6d5a9a;
-  --color-accent-hover-top: #7d6dad;
-  --color-success: #6b7c5c;
+  /* 和紙 washi — warm paper */
+  --color-background: #f7f4f0;
+  --color-background-top: #f0ebe3;
+  --color-surface: #fffefc;
+  --color-foreground: #27221f; /* 墨 sumi */
+  --color-muted: #5c4a42; /* 茶 brown, readable on paper */
+  --color-border: #e0d9d2;
+  /* 朱 shu — vermillion (torii, lacquer, life force) */
+  --color-accent: #b54a3a;
+  --color-accent-top: #c85a4a;
+  --color-accent-hover: #9a3a2e;
+  --color-accent-hover-top: #a84a3e;
+  --color-accent-foreground: #ffffff; /* text on accent */
+  /* 蘇芳 su'ō — deeper red, same family */
+  --color-success: #7e2639;
 }
 
-/* Dark Mode 2.0: deep charcoal, no pure black */
 .dark {
-  --color-background: #171717;
-  --color-background-top: #1c1c1c;
-  --color-surface: #262626;
-  --color-foreground: #fafaf9;
-  --color-muted: #a8a29e;
-  --color-border: #404040;
-  --color-accent: #c4b5fd;
-  --color-accent-top: #ddd6fe;
-  --color-accent-hover: #a78bfa;
-  --color-accent-hover-top: #c4b5fd;
-  --color-success: #86a878;
+  /* 墨 sumi / 黒色 kokushoku */
+  --color-background: #171412;
+  --color-background-top: #1c1816;
+  --color-surface: #252019;
+  --color-foreground: #f5f0e8;
+  --color-muted: #a8988c;
+  --color-border: #3d352e;
+  /* 朱 — slightly brighter so it reads on dark */
+  --color-accent: #d45a4a;
+  --color-accent-top: #e06a5a;
+  --color-accent-hover: #e87a6a;
+  --color-accent-hover-top: #e06a5a;
+  --color-accent-foreground: #fff8f5;
+  /* 蘇芳 */
+  --color-success: #9a3648;
 }
 
 /* Subtle page gradient for depth */

@@ -20,7 +20,7 @@ const baseClasses =
 
 const variantClasses = {
   primary:
-    'bg-[linear-gradient(to_bottom,var(--color-accent-top),var(--color-accent))] text-foreground shadow-button border border-black/10 hover:bg-[linear-gradient(to_bottom,var(--color-accent-hover-top),var(--color-accent-hover))] hover:shadow-button-hover active:shadow-button active:translate-y-px',
+    'bg-[linear-gradient(to_bottom,var(--color-accent-top),var(--color-accent))] text-accent-foreground shadow-button border border-black/10 hover:bg-[linear-gradient(to_bottom,var(--color-accent-hover-top),var(--color-accent-hover))] hover:shadow-button-hover active:shadow-button active:translate-y-px',
   secondary:
     'border border-border bg-surface text-foreground shadow-button hover:bg-surface hover:border-muted hover:shadow-button-hover active:translate-y-px',
 };

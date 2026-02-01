@@ -7,7 +7,7 @@
       >
         {{ siteName }}
       </AppLink>
-      <div class="flex items-center gap-1">
+      <div class="flex items-center gap-2">
         <AppButton
           to="/demo"
           variant="secondary"
@@ -15,10 +15,10 @@
         >
           demo
         </AppButton>
-        <button
-          type="button"
+        <AppButton
+          variant="secondary"
+          class="p-2.5"
           aria-label="Toggle dark mode"
-          class="rounded-md p-2 text-muted transition-colors hover:bg-surface hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           @click="toggle"
         >
           <Icon
@@ -26,7 +26,7 @@
             class="size-5"
             aria-hidden
           />
-        </button>
+        </AppButton>
       </div>
     </header>
     <main class="flex-1 px-4 py-6 sm:px-6">

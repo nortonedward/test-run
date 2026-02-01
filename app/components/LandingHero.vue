@@ -31,14 +31,14 @@ defineProps<Props>();
         >
           {{ primaryCta.label }}
         </AppButton>
-        <AppLink
+        <AppButton
           v-if="secondaryCta"
           :to="secondaryCta.to"
           :href="secondaryCta.href"
-          class="font-medium"
+          variant="secondary"
         >
           {{ secondaryCta.label }}
-        </AppLink>
+        </AppButton>
       </div>
     </div>
   </section>
