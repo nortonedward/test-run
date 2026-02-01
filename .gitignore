@@ -13,6 +13,15 @@ node_modules
 logs
 *.log
 
+# Cursor (ignore local state; keep rules versioned)
+.cursor/
+
+# Test coverage
+coverage
+
+# pnpm
+pnpm-debug.log*
+
 # Misc
 .DS_Store
 .fleet

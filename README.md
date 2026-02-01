@@ -1,6 +1,6 @@
-# Nuxt Minimal Starter
+# Nuxt 4 Minimal Starter
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt 4 + Vue 3.5 + TypeScript + Tailwind + Pinia + VueUse + Zod. See [Nuxt 4 docs](https://nuxt.com/docs/4.x/getting-started/introduction).
 
 ## Setup
 
