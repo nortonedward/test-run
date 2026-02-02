@@ -11,6 +11,30 @@ const preview: Preview = {
       },
     },
   },
+  globalTypes: {
+    theme: {
+      description: 'Color theme',
+      toolbar: {
+        title: 'Theme',
+        icon: 'circlehollow',
+        items: [
+          { value: 'light', title: 'Light' },
+          { value: 'dark', title: 'Dark' },
+        ],
+        dynamicTitle: true,
+      },
+    },
+  },
+  initialGlobals: {
+    theme: 'light',
+  },
+  decorators: [
+    (story, context) => {
+      const theme = context.globals?.theme ?? 'light';
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+      return story();
+    },
+  ],
 };
 
 export default preview;

@@ -18,7 +18,7 @@ interface Props {
 }
 declare const _default: import('vue').DefineComponent<Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<Props> & Readonly<{}>, {
     variant: ButtonVariant;
-    size: "sm" | "md" | "lg";
     type: "button" | "submit";
+    size: "sm" | "md" | "lg";
 }, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, HTMLButtonElement>;
 export default _default;

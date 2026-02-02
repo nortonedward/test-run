@@ -1,44 +1,60 @@
 # Colors & Themes
 
-The palette is informed by 和色 (wa-iro) tradition. All tokens use **semantic names**—no literal element names in the API.
+The palette is **Sanzo Wada Bundle A: Warm & Earthy** — Ivory Buff, Etruscan Red, Ochraceous Salmon.
 
 ## Light theme
 
 ### Surfaces
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Background" token="--color-background" description="和紙 washi — page background" />
+  <ColorSwatch name="Background" token="--color-background" description="Ivory Buff — page background" />
   <ColorSwatch name="Surface" token="--color-surface" description="Cards, panels" />
-  <ColorSwatch name="Foreground" token="--color-foreground" description="墨 sumi — primary text" />
-  <ColorSwatch name="Muted" token="--color-muted" description="茶 cha — secondary text" />
+  <ColorSwatch name="Foreground" token="--color-foreground" description="Vandyke Brown — primary text" />
+  <ColorSwatch name="Muted" token="--color-muted" description="Mineral Gray — secondary text" />
   <ColorSwatch name="Border" token="--color-border" description="Dividers, outlines" />
 </UiStack>
 
 ### Primary & accent
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Primary / Accent" token="--color-accent" description="朱 shu — main CTA" />
+  <ColorSwatch name="Primary / Accent" token="--color-accent" description="Etruscan Red — main CTA" />
   <ColorSwatch name="Accent Hover" token="--color-accent-hover" />
   <ColorSwatch name="Accent Foreground" token="--color-accent-foreground" description="Text on accent" />
 </UiStack>
 
-### Semantic colors
+### Semantic colors (base + accent)
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Success" token="--color-success" description="若緑 wakamidori" />
-  <ColorSwatch name="Error" token="--color-error" description="蘇芳 su'ō" />
-  <ColorSwatch name="Warning" token="--color-warning" description="山吹 yamabuki" />
-  <ColorSwatch name="Info" token="--color-info" description="青磁 seiji" />
-  <ColorSwatch name="Secondary" token="--color-secondary" description="Muted actions" />
+  <ColorSwatch name="Primary" token="--color-primary" description="Etruscan Red" />
+  <ColorSwatch name="Primary accent" token="--color-primary-accent" description="Seashell Pink" />
+  <ColorSwatch name="Secondary" token="--color-secondary" description="Ochraceous Salmon" />
+  <ColorSwatch name="Secondary accent" token="--color-secondary-accent" description="Light salmon" />
+  <ColorSwatch name="Success" token="--color-success" description="Artemesia Green" />
+  <ColorSwatch name="Success accent" token="--color-success-accent" description="Glaucous Green" />
+  <ColorSwatch name="Error" token="--color-error" description="Carmine Red" />
+  <ColorSwatch name="Error accent" token="--color-error-accent" description="Seashell Pink" />
+  <ColorSwatch name="Warning" token="--color-warning" description="Naples Yellow" />
+  <ColorSwatch name="Warning accent" token="--color-warning-accent" description="Sulpher Yellow" />
+  <ColorSwatch name="Info" token="--color-info" description="Violet Blue" />
+  <ColorSwatch name="Info accent" token="--color-info-accent" description="Grayish Lavender A" />
 </UiStack>
+
+### Accent usage
+
+Use `-accent` for soft backgrounds, borders, and highlights:
+
+```html
+<div class="bg-primary-accent border border-primary rounded-lg p-4">Primary highlight</div>
+<div class="bg-success-accent border border-success rounded-lg p-4">Success highlight</div>
+```
 
 ### In context
 
 <UiStack gap="6">
-  <UiAlert variant="success">Success — 若緑</UiAlert>
-  <UiAlert variant="warning">Warning — 山吹</UiAlert>
-  <UiAlert variant="error">Error — 蘇芳</UiAlert>
-  <UiAlert variant="info">Info — 青磁</UiAlert>
+  <UiAlert variant="success">Success — Artemesia Green</UiAlert>
+  <UiAlert variant="warning">Warning — Naples Yellow</UiAlert>
+  <UiAlert variant="error">Error — Carmine Red</UiAlert>
+  <UiAlert variant="info">Info — Violet Blue</UiAlert>
   <UiStack gap="4" direction="horizontal" class="flex-wrap">
     <UiButton variant="primary">Primary</UiButton>
     <UiButton variant="secondary">Secondary</UiButton>
@@ -51,10 +67,10 @@ Toggle dark mode in the nav bar to see the dark palette. The same semantic token
 
 | Token      | Light     | Dark      |
 | ---------- | --------- | --------- |
-| Background | `#f7f4f0` | `#171412` |
-| Surface    | `#fffefc` | `#252019` |
-| Foreground | `#27221f` | `#f5f0e8` |
-| Accent     | `#b54a3a` | `#d45a4a` |
+| Background | `#ebd999` | `#1a1510` |
+| Surface    | `#fffef9` | `#2a241c` |
+| Foreground | `#362304` | `#ebe5d8` |
+| Accent     | `#c9303e` | `#d9404e` |
 
 ## Overriding
 

@@ -6,12 +6,18 @@ Semantic names only. See [design-system](./design-system) for the full spec.
 
 | Token                                | Role                |
 | ------------------------------------ | ------------------- |
-| `--color-primary` / `--color-accent` | Main CTA (朱)       |
+| `--color-primary` / `--color-accent` | Main CTA            |
+| `--color-primary-accent`             | Primary soft variant|
 | `--color-secondary`                  | Muted / outline     |
-| `--color-success`                    | Positive (若緑)     |
-| `--color-error`                      | Danger (蘇芳)       |
-| `--color-warning`                    | Caution (山吹)      |
-| `--color-info`                       | Neutral info (青磁) |
+| `--color-secondary-accent`           | Secondary soft      |
+| `--color-success`                    | Positive            |
+| `--color-success-accent`             | Success soft        |
+| `--color-error`                      | Danger              |
+| `--color-error-accent`               | Error soft          |
+| `--color-warning`                    | Caution             |
+| `--color-warning-accent`             | Warning soft        |
+| `--color-info`                       | Neutral info       |
+| `--color-info-accent`                | Info soft           |
 | `--color-surface`                    | Cards, panels       |
 | `--color-foreground`                 | Primary text        |
 | `--color-muted`                      | Secondary text      |

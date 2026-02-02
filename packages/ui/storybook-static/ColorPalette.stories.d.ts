@@ -1,0 +1,17 @@
+import { Meta, StoryObj } from '@storybook/vue3-vite';
+declare const meta: Meta;
+export default meta;
+type Story = StoryObj<typeof meta>;
+export declare const Surfaces: Story;
+export declare const Primary: Story;
+export declare const Accent: Story;
+export declare const Secondary: Story;
+export declare const Success: Story;
+export declare const Error: Story;
+export declare const Warning: Story;
+export declare const Info: Story;
+export declare const AlertBackgrounds: Story;
+export declare const AllColors: Story;
+export declare const DarkMode: Story;
+export declare const BundleOptions: Story;
+export declare const InContext: Story;

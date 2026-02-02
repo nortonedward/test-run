@@ -1,57 +1,67 @@
 /*
-  Design tokens — Japanese-inspired (和色, MA, wabi-sabi, Seijaku)
-  Semantic names only. See docs/design-system.md for philosophy.
+  Design tokens — Sanzo Wada Bundle A: Warm & Earthy
+  Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward
 */
 
 :root {
-  /* Surfaces — 和紙 washi */
-  --color-background: #f7f4f0;
-  --color-background-top: #f0ebe3;
-  --color-surface: #fffefc;
-  --color-foreground: #27221f; /* 墨 sumi */
-  --color-muted: #5c4a42; /* 茶 cha */
-  --color-border: #e0d9d2;
+  /* Surfaces — Ivory Buff, Fawn, Mineral Gray */
+  --color-background: #ebd999;
+  --color-background-top: #e5d38a;
+  --color-surface: #fffef9;
+  --color-foreground: #362304; /* Vandyke Brown */
+  --color-muted: #9fc2b2; /* Mineral Gray */
+  --color-border: #d1b0b3; /* Fawn */
 
-  /* Primary / accent — 朱 shu (vermillion) */
-  --color-primary: #b54a3a;
-  --color-primary-hover: #9a3a2e;
+  /* Primary — Etruscan Red */
+  --color-primary: #c9303e;
+  --color-primary-hover: #b82a38;
+  --color-primary-accent: #ffcfc4; /* Seashell Pink */
   --color-primary-foreground: #ffffff;
-  --color-accent: #b54a3a;
-  --color-accent-top: #c85a4a;
-  --color-accent-hover: #9a3a2e;
-  --color-accent-hover-top: #a84a3e;
+
+  /* Main CTA accent (alias for primary) */
+  --color-accent: #c9303e;
+  --color-accent-top: #d9404e;
+  --color-accent-hover: #b82a38;
+  --color-accent-hover-top: #c9303e;
   --color-accent-foreground: #ffffff;
 
-  /* Secondary — muted 墨 / 茶 */
-  --color-secondary: #5c4a42;
-  --color-secondary-hover: #4a3a32;
-  --color-secondary-foreground: #ffffff;
+  /* Secondary — Ochraceous Salmon */
+  --color-secondary: #d99e73;
+  --color-secondary-hover: #c98e63;
+  --color-secondary-accent: #f5e6dc;
+  --color-secondary-foreground: #362304;
 
-  /* Success — 若緑 wakamidori */
-  --color-success: #2d8a5e;
-  --color-success-hover: #247a50;
+  /* Success — Artemesia Green */
+  --color-success: #65a98f;
+  --color-success-hover: #549a7e;
+  --color-success-accent: #b3e8c2; /* Glaucous Green */
   --color-success-foreground: #ffffff;
 
-  /* Error — 蘇芳 su'ō (repurposed from old success) */
-  --color-error: #7e2639;
-  --color-error-hover: #6a1f30;
+  /* Error — Carmine Red */
+  --color-error: #a10b2b;
+  --color-error-hover: #8a0924;
+  --color-error-accent: #ffcfc4; /* Seashell Pink */
   --color-error-foreground: #ffffff;
 
-  /* Warning — 山吹 yamabuki */
-  --color-warning: #e6a23c;
-  --color-warning-hover: #d4922a;
-  --color-warning-foreground: #27221f;
+  /* Warning — Naples Yellow */
+  --color-warning: #faed8f;
+  --color-warning-hover: #e8dd7a;
+  --color-warning-accent: #f5f5b8; /* Sulpher Yellow */
+  --color-warning-foreground: #362304;
 
-  /* Info — 青磁 seiji */
-  --color-info: #268785;
-  --color-info-hover: #1e6b6a;
+  /* Info — Violet Blue */
+  --color-info: #202d85;
+  --color-info-hover: #1a2570;
+  --color-info-accent: #b8b8ff; /* Grayish Lavender A */
   --color-info-foreground: #ffffff;
 
-  /* Alert backgrounds (light tints for readability) */
-  --color-success-bg: rgb(45 138 94 / 0.12);
-  --color-warning-bg: rgb(230 162 60 / 0.12);
-  --color-error-bg: rgb(126 38 57 / 0.12);
-  --color-info-bg: rgb(38 135 133 / 0.12);
+  /* Alert backgrounds (light tints) */
+  --color-success-bg: rgb(101 169 143 / 0.12);
+  --color-warning-bg: rgb(250 237 143 / 0.15);
+  --color-error-bg: rgb(161 11 43 / 0.12);
+  --color-info-bg: rgb(32 45 133 / 0.12);
+  --color-primary-bg: rgb(201 48 62 / 0.12);
+  --color-secondary-bg: rgb(217 158 115 / 0.12);
 
   /* Spacing — MA-based (ratio 1.25) */
   --space-2: 0.5rem;
@@ -85,54 +95,62 @@
 }
 
 .dark {
-  /* Surfaces — 墨 sumi / 黒色 kokushoku */
-  --color-background: #171412;
-  --color-background-top: #1c1816;
-  --color-surface: #252019;
-  --color-foreground: #f5f0e8;
-  --color-muted: #a8988c;
-  --color-border: #3d352e;
+  /* Surfaces — Vandyke Brown, warm darks */
+  --color-background: #1a1510;
+  --color-background-top: #221c16;
+  --color-surface: #2a241c;
+  --color-foreground: #ebe5d8;
+  --color-muted: #b5c4b8;
+  --color-border: #3d3530;
 
-  /* Primary / accent — 朱 */
-  --color-primary: #d45a4a;
-  --color-primary-hover: #e87a6a;
-  --color-primary-foreground: #fff8f5;
-  --color-accent: #d45a4a;
-  --color-accent-top: #e06a5a;
-  --color-accent-hover: #e87a6a;
-  --color-accent-hover-top: #e06a5a;
-  --color-accent-foreground: #fff8f5;
+  /* Primary — Etruscan Red (lifted) */
+  --color-primary: #d9404e;
+  --color-primary-hover: #e9505e;
+  --color-primary-accent: #4a2024;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #d9404e;
+  --color-accent-top: #e9505e;
+  --color-accent-hover: #e9505e;
+  --color-accent-hover-top: #e9505e;
+  --color-accent-foreground: #ffffff;
 
-  /* Secondary */
-  --color-secondary: #6b5a52;
-  --color-secondary-hover: #7d6c64;
-  --color-secondary-foreground: #f5f0e8;
+  /* Secondary — Ochraceous Salmon */
+  --color-secondary: #e0ae84;
+  --color-secondary-hover: #e8be94;
+  --color-secondary-accent: #3d3025;
+  --color-secondary-foreground: #1a1510;
 
-  /* Success */
-  --color-success: #3da672;
-  --color-success-hover: #4ab67d;
+  /* Success — Artemesia Green */
+  --color-success: #75b99f;
+  --color-success-hover: #85c9af;
+  --color-success-accent: #1a3528;
   --color-success-foreground: #ffffff;
 
-  /* Error — 蘇芳 */
-  --color-error: #9a3648;
-  --color-error-hover: #b04558;
-  --color-error-foreground: #fff8f5;
+  /* Error — Carmine Red */
+  --color-error: #b82d4d;
+  --color-error-hover: #c83d5d;
+  --color-error-accent: #3d1520;
+  --color-error-foreground: #ffffff;
 
-  /* Warning */
-  --color-warning: #e6a23c;
-  --color-warning-hover: #f0b050;
-  --color-warning-foreground: #27221f;
+  /* Warning — Naples Yellow */
+  --color-warning: #faf09f;
+  --color-warning-hover: #faf8a8;
+  --color-warning-accent: #4a4520;
+  --color-warning-foreground: #1a1510;
 
-  /* Info */
-  --color-info: #3a9d9b;
-  --color-info-hover: #4aadab;
+  /* Info — Violet Blue */
+  --color-info: #4a5da5;
+  --color-info-hover: #5a6db5;
+  --color-info-accent: #1a2045;
   --color-info-foreground: #ffffff;
 
   /* Alert backgrounds (dark) */
-  --color-success-bg: rgb(61 166 114 / 0.2);
-  --color-warning-bg: rgb(230 162 60 / 0.2);
-  --color-error-bg: rgb(154 54 72 / 0.2);
-  --color-info-bg: rgb(58 157 155 / 0.2);
+  --color-success-bg: rgb(117 185 159 / 0.2);
+  --color-warning-bg: rgb(250 240 159 / 0.2);
+  --color-error-bg: rgb(184 45 77 / 0.2);
+  --color-info-bg: rgb(74 93 165 / 0.2);
+  --color-primary-bg: rgb(217 64 78 / 0.2);
+  --color-secondary-bg: rgb(224 174 132 / 0.2);
 
   /* Shadows — darker */
   --shadow-card: 0 1px 3px rgb(0 0 0 / 0.2), 0 4px 6px -2px rgb(0 0 0 / 0.15);
@@ -192,7 +210,7 @@
 
 /* Select chevron */
 .ui-select-chevron {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%235c4a42' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239fc2b2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 0.5rem center;
   background-size: 1.5em 1.5em;
   padding-right: 2.5rem;

@@ -10,7 +10,7 @@ This document is the contract for the component library. No code yet; it defines
 
 The design system is informed by Japanese aesthetic tradition. The **API stays product-facing**—no literal element names (Wood, Fire, etc.) in code. The palette and motion values are derived from these principles and documented here.
 
-- **和色 (wa-iro):** Traditional Japanese colors. Warm neutrals (和紙 washi, 墨 sumi), vermillion accent (朱 shu), deeper reds (蘇芳 su'ō). Palette origin for semantic tokens.
+- **Sanzo Wada Bundle A:** Warm & Earthy. Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward. Surfaces: Ivory Buff, Fawn, Mineral Gray. Primary: Etruscan Red. Secondary: Ochraceous Salmon.
 - **MA (間):** Meaningful emptiness; the "pause" between elements. Spacing favors breathing room; default padding avoids cramped layouts.
 - **Wabi-sabi:** Imperfection, natural texture, subtle depth. Soft gradients, layered shadows, organic radii—not flat or harshly geometric.
 - **Yūgen:** Subtle depth. Transitions on hover/focus (lift, shadow, color) feel alive but calm.
@@ -30,19 +30,29 @@ Favor bold over totally muted for hierarchy, CTAs, and key UI. Default token val
 
 ### Colors
 
-| Token                                | Role                    | 和色-inspired source            | Notes                             |
-| ------------------------------------ | ----------------------- | ------------------------------- | --------------------------------- |
-| `--color-primary` / `--color-accent` | Main CTA                | 朱 shu (vermillion)             | Keep strong; WCAG AA minimum      |
-| `--color-secondary`                  | Muted / outline actions | Muted 墨 or 青磁 seiji          | Distinct from primary             |
-| `--color-success`                    | Positive, done          | 若緑 wakamidori / 青緑 aomidori | Green                             |
-| `--color-error`                      | Danger, invalid         | 蘇芳 su'ō                       | Deeper red; distinct from primary |
-| `--color-warning`                    | Caution                 | 山吹 yamabuki / 黄 ki           | Yellow/amber                      |
-| `--color-info`                       | Neutral info            | 青 ao / 青磁 seiji              | Blue/blue-green                   |
-| `--color-surface`                    | Cards, panels           | 和紙 washi                      | Warm paper                        |
-| `--color-background`                 | Page background         | 和紙 washi                      | Warm paper                        |
-| `--color-foreground`                 | Primary text            | 墨 sumi                         | Ink                               |
-| `--color-muted`                      | Secondary text          | 茶 cha                          | Brown, readable                   |
-| `--color-border`                     | Borders, dividers       | Warm gray                       | Soft, not harsh                   |
+Palette derived from **Sanzo Wada's A Dictionary of Color Combinations Vol. 2** (1935–1938): 72 seasonal palettes + 165 design/fashion combinations. Wada blended traditional Japanese color sense with Western color theory; our tokens map his named swatches to semantic roles.
+
+| Token                                | Role                    | Sanzo Wada source                | Notes                             |
+| ------------------------------------ | ----------------------- | -------------------------------- | --------------------------------- |
+| `--color-primary` / `--color-accent` | Main CTA                | Etruscan Red                     | Bold, art-forward                  |
+| `--color-primary-accent`             | Primary soft variant    | Seashell Pink                    | Backgrounds, borders               |
+| `--color-secondary`                  | Muted / outline actions | Ochraceous Salmon               | Warm earth                         |
+| `--color-secondary-accent`           | Secondary soft variant  | Light salmon tint               | Backgrounds, borders               |
+| `--color-success`                    | Positive, done          | Artemesia Green                 | Calming sage                       |
+| `--color-success-accent`             | Success soft variant    | Glaucous Green                  | Backgrounds, borders              |
+| `--color-error`                      | Danger, invalid         | Carmine Red                     | Bold                               |
+| `--color-error-accent`               | Error soft variant      | Seashell Pink                   | Backgrounds, borders              |
+| `--color-warning`                    | Caution                 | Naples Yellow                   | Warm, soft                          |
+| `--color-warning-accent`             | Warning soft variant    | Sulpher Yellow                  | Backgrounds, borders               |
+| `--color-info`                       | Neutral info            | Violet Blue                     | Serene depth                       |
+| `--color-info-accent`                | Info soft variant       | Grayish Lavender A              | Backgrounds, borders              |
+| `--color-surface`                    | Cards, panels           | Warm paper                      | Ivory Buff tint                    |
+| `--color-background`                 | Page background         | Ivory Buff                      | Warm cream                         |
+| `--color-foreground`                 | Primary text            | Vandyke Brown                   | Ink                                |
+| `--color-muted`                      | Secondary text          | Mineral Gray                    | Weathered stone                    |
+| `--color-border`                     | Borders, dividers       | Fawn                            | Soft, warm                         |
+
+Each semantic color has `-accent`: a lighter (light mode) or darker (dark mode) variant for backgrounds, borders, and highlights. Use `bg-primary-accent`, `border-success-accent`, etc.
 
 Each color has light and dark variants. Hover/active/foreground variants where needed (e.g. `--color-accent-hover`, `--color-accent-foreground`).
 
