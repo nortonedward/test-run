@@ -3,9 +3,9 @@
     "props": [
       {
         "name": "variant",
-        "type": "union",
+        "type": "ButtonVariant",
         "default": "'primary'",
-        "description": "Primary action (accent); secondary is outline."
+        "description": "Visual style; primary is main CTA, ghost is minimal."
       },
       {
         "name": "size",
@@ -30,6 +30,52 @@
         "type": "string",
         "default": "-",
         "description": "External link destination."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction and reduces opacity."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiIconButton": {
+    "props": [
+      {
+        "name": "icon",
+        "type": "Component",
+        "default": "-",
+        "description": "Icon component to render. Import from @heroicons/vue/24/outline (e.g. TrashIcon, PlusIcon)."
+      },
+      {
+        "name": "variant",
+        "type": "ButtonVariant",
+        "default": "'primary'",
+        "description": "Visual style; matches UiButton variants."
+      },
+      {
+        "name": "size",
+        "type": "union",
+        "default": "'md'",
+        "description": "Size affects padding and icon scale."
+      },
+      {
+        "name": "ariaLabel",
+        "type": "string",
+        "default": "-",
+        "description": "Accessible label for screen readers (required for icon-only buttons)."
+      },
+      {
+        "name": "type",
+        "type": "union",
+        "default": "'button'",
+        "description": "Button type when rendered as native button."
       },
       {
         "name": "disabled",

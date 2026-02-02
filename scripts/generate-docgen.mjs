@@ -15,6 +15,7 @@ const outputPath = join(root, 'docs/.vitepress/docgen.json');
 
 const componentFiles = [
   'UiButton.vue',
+  'UiIconButton.vue',
   'UiCard.vue',
   'UiHeading.vue',
   'UiLink.vue',

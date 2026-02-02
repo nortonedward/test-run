@@ -16,10 +16,31 @@ export default {
           hover: 'var(--color-accent-hover)',
           foreground: 'var(--color-accent-foreground)',
         },
-        success: 'var(--color-success)',
-        warning: 'var(--color-warning)',
-        error: 'var(--color-error)',
-        info: 'var(--color-info)',
+        secondary: {
+          DEFAULT: 'var(--color-secondary)',
+          hover: 'var(--color-secondary-hover)',
+          foreground: 'var(--color-secondary-foreground)',
+        },
+        success: {
+          DEFAULT: 'var(--color-success)',
+          hover: 'var(--color-success-hover)',
+          foreground: 'var(--color-success-foreground)',
+        },
+        warning: {
+          DEFAULT: 'var(--color-warning)',
+          hover: 'var(--color-warning-hover)',
+          foreground: 'var(--color-warning-foreground)',
+        },
+        error: {
+          DEFAULT: 'var(--color-error)',
+          hover: 'var(--color-error-hover)',
+          foreground: 'var(--color-error-foreground)',
+        },
+        info: {
+          DEFAULT: 'var(--color-info)',
+          hover: 'var(--color-info-hover)',
+          foreground: 'var(--color-info-foreground)',
+        },
       },
       boxShadow: {
         card: 'var(--shadow-card)',

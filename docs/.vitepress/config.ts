@@ -4,6 +4,7 @@ import { resolve } from 'path';
 export default defineConfig({
   title: 'UI Library',
   description: 'Japanese-inspired Vue/Nuxt component library',
+  ignoreDeadLinks: true, // Storybook links (localhost:6006) are unavailable during docs build
   vite: {
     resolve: {
       alias: [
@@ -42,6 +43,7 @@ export default defineConfig({
         items: [
           { text: 'Alert', link: '/components/alert' },
           { text: 'Button', link: '/components/button' },
+          { text: 'Icon Button', link: '/components/icon-button' },
           { text: 'Card', link: '/components/card' },
           { text: 'Checkbox', link: '/components/checkbox' },
           { text: 'Container', link: '/components/container' },

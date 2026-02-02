@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/vue3';
+import type { Meta, StoryObj } from '@storybook/vue3-vite';
 import UiButton from './UiButton.vue';
 
 const meta: Meta<typeof UiButton> = {
@@ -7,7 +7,7 @@ const meta: Meta<typeof UiButton> = {
   argTypes: {
     variant: {
       control: 'select',
-      options: ['primary', 'secondary'],
+      options: ['primary', 'secondary', 'ghost', 'success', 'error', 'warning', 'info'],
     },
     size: {
       control: 'select',
@@ -33,5 +33,22 @@ export const Default: Story = {
       return { args };
     },
     template: '<UiButton v-bind="args">Button</UiButton>',
+  }),
+};
+
+export const Variants: Story = {
+  render: () => ({
+    components: { UiButton },
+    template: `
+      <div class="flex flex-wrap gap-4">
+        <UiButton variant="primary">Primary</UiButton>
+        <UiButton variant="secondary">Secondary</UiButton>
+        <UiButton variant="ghost">Ghost</UiButton>
+        <UiButton variant="success">Success</UiButton>
+        <UiButton variant="error">Error</UiButton>
+        <UiButton variant="warning">Warning</UiButton>
+        <UiButton variant="info">Info</UiButton>
+      </div>
+    `,
   }),
 };
