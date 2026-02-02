@@ -7,21 +7,21 @@ import UiAlert from './components/UiAlert.vue';
 /* Three full Sanzo Wada bundle options — choose one to apply */
 const bundleA = {
   title: 'Bundle A: Warm & Earthy',
-  subtitle: 'Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward',
+  subtitle: 'Off-white, Etruscan Red, Ochraceous Salmon — serene, art-forward',
   surfaces: [
     { label: 'Background', hex: '#ebd999', wada: 'Ivory Buff' },
     { label: 'Surface', hex: '#fffef9', wada: 'Warm paper' },
     { label: 'Foreground', hex: '#362304', wada: 'Vandyke Brown' },
-    { label: 'Muted', hex: '#9fc2b2', wada: 'Mineral Gray' },
-    { label: 'Border', hex: '#d1b0b3', wada: 'Fawn' },
+    { label: 'Muted', hex: '#5c7a6d', wada: 'Mineral Gray (dark)' },
+    { label: 'Border', hex: '#b89a9d', wada: 'Fawn (dark)' },
   ],
   semantic: [
-    { label: 'Primary', hex: '#c9303e', wada: 'Etruscan Red' },
+    { label: 'Primary', hex: '#c98e63', wada: 'Ochraceous Salmon (deep)' },
     { label: 'Primary accent', hex: '#ffcfc4', wada: 'Seashell Pink' },
-    { label: 'Secondary', hex: '#d99e73', wada: 'Ochraceous Salmon' },
-    { label: 'Success', hex: '#65a98f', wada: 'Artemesia Green' },
+    { label: 'Secondary', hex: '#c9303e', wada: 'Etruscan Red' },
+    { label: 'Success', hex: '#549a7e', wada: 'Artemesia Green (deep)' },
     { label: 'Error', hex: '#a10b2b', wada: 'Carmine Red' },
-    { label: 'Warning', hex: '#faed8f', wada: 'Naples Yellow' },
+    { label: 'Warning', hex: '#e8dd7a', wada: 'Naples Yellow (deep)' },
     { label: 'Info', hex: '#202d85', wada: 'Violet Blue' },
   ],
 };
@@ -74,7 +74,7 @@ const meta: Meta = {
     docs: {
       description: {
         component:
-          'Sanzo Wada Bundle A: Warm & Earthy. Ivory Buff, Etruscan Red, Ochraceous Salmon.',
+          'Sanzo Wada Bundle A: Warm & Earthy. Off-white, Etruscan Red, Ochraceous Salmon.',
       },
     },
   },
@@ -108,11 +108,11 @@ export const Primary: Story = {
     components: { ColorSwatch },
     template: `
       <div class="space-y-6">
-        <h3 class="text-lg font-semibold text-foreground">Primary (Etruscan Red)</h3>
+        <h3 class="text-lg font-semibold text-foreground">Primary (Ochraceous Salmon)</h3>
         <div class="flex flex-wrap gap-6">
           <ColorSwatch token="--color-primary" label="Primary" />
           <ColorSwatch token="--color-primary-hover" label="Primary hover" />
-          <ColorSwatch token="--color-primary-accent" label="Primary accent" description="Seashell Pink" />
+          <ColorSwatch token="--color-primary-accent" label="Primary accent" description="Light salmon tint" />
           <ColorSwatch token="--color-primary-foreground" label="Primary foreground" />
         </div>
       </div>
@@ -143,11 +143,11 @@ export const Secondary: Story = {
     components: { ColorSwatch },
     template: `
       <div class="space-y-6">
-        <h3 class="text-lg font-semibold text-foreground">Secondary (Ochraceous Salmon)</h3>
+        <h3 class="text-lg font-semibold text-foreground">Secondary (Etruscan Red)</h3>
         <div class="flex flex-wrap gap-6">
           <ColorSwatch token="--color-secondary" label="Secondary" />
           <ColorSwatch token="--color-secondary-hover" label="Secondary hover" />
-          <ColorSwatch token="--color-secondary-accent" label="Secondary accent" description="Light salmon" />
+          <ColorSwatch token="--color-secondary-accent" label="Secondary accent" description="Seashell Pink" />
           <ColorSwatch token="--color-secondary-foreground" label="Secondary foreground" />
         </div>
       </div>
@@ -249,7 +249,7 @@ export const AllColors: Story = {
       <div class="space-y-10">
         <div>
           <h2 class="text-xl font-bold text-foreground mb-6">Complete palette</h2>
-          <p class="text-muted mb-6">Bundle A: Warm & Earthy — Ivory Buff, Etruscan Red, Ochraceous Salmon.</p>
+          <p class="text-muted mb-6">Bundle A: Warm & Earthy — Off-white, Etruscan Red, Ochraceous Salmon.</p>
         </div>
         <div>
           <h3 class="text-lg font-semibold text-foreground mb-4">Surfaces</h3>
@@ -398,7 +398,7 @@ export const BundleOptions: Story = {
           <div class="space-y-6 p-6 rounded-xl border border-border bg-surface">
             <div>
               <h3 class="text-lg font-semibold text-foreground">Bundle A</h3>
-              <p class="text-sm text-muted mt-1">Warm & Earthy — Ivory Buff, Etruscan Red</p>
+              <p class="text-sm text-muted mt-1">Warm & Earthy — Off-white, Ochraceous Salmon</p>
             </div>
             <PalettePreview title="Surfaces" :colors="bundleA.surfaces" />
             <PalettePreview title="Semantic" :colors="bundleA.semantic" />
@@ -425,8 +425,8 @@ export const BundleOptions: Story = {
             <p class="text-sm font-medium mb-2" style="color: #362304;">Bundle A preview</p>
             <div class="flex gap-2 flex-wrap">
               <div class="w-10 h-10 rounded" style="background: #c9303e;"></div>
-              <div class="w-10 h-10 rounded" style="background: #d99e73;"></div>
-              <div class="w-10 h-10 rounded" style="background: #65a98f;"></div>
+              <div class="w-10 h-10 rounded" style="background: #c98e63;"></div>
+              <div class="w-10 h-10 rounded" style="background: #549a7e;"></div>
               <div class="w-10 h-10 rounded" style="background: #202d85;"></div>
             </div>
           </div>

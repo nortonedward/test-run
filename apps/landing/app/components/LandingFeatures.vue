@@ -17,7 +17,7 @@ withDefaults(defineProps<Props>(), {
 </script>
 
 <template>
-  <section class="py-16 sm:py-24">
+  <section class="bg-secondary-accent/20 py-16 sm:py-24">
     <div class="mx-auto max-w-5xl">
       <UiHeading :level="2" :muted="subtext" class="mb-12 text-center">
         {{ heading }}

@@ -1,67 +1,67 @@
 /*
   Design tokens — Sanzo Wada Bundle A: Warm & Earthy
-  Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward
+  Primary: Ochraceous Salmon (coral). Secondary: Etruscan Red. Error: Carmine Red.
 */
 
 :root {
-  /* Surfaces — Ivory Buff, Fawn, Mineral Gray */
-  --color-background: #ebd999;
-  --color-background-top: #e5d38a;
+  /* Surfaces — off-white, darker border/muted for contrast */
+  --color-background: #fafaf9;
+  --color-background-top: #f5f5f3;
   --color-surface: #fffef9;
   --color-foreground: #362304; /* Vandyke Brown */
-  --color-muted: #9fc2b2; /* Mineral Gray */
-  --color-border: #d1b0b3; /* Fawn */
+  --color-muted: #5c7a6d; /* Darker Mineral Gray — readable on light */
+  --color-border: #b89a9d; /* Darker Fawn — visible borders */
 
-  /* Primary — Etruscan Red */
-  --color-primary: #c9303e;
-  --color-primary-hover: #b82a38;
-  --color-primary-accent: #ffcfc4; /* Seashell Pink */
-  --color-primary-foreground: #ffffff;
+  /* Primary — deeper coral (matches dark-mode contrast feel) */
+  --color-primary: #c98e63;
+  --color-primary-hover: #b87d52;
+  --color-primary-accent: #e8d4c8;
+  --color-primary-foreground: #362304;
 
   /* Main CTA accent (alias for primary) */
-  --color-accent: #c9303e;
-  --color-accent-top: #d9404e;
-  --color-accent-hover: #b82a38;
-  --color-accent-hover-top: #c9303e;
-  --color-accent-foreground: #ffffff;
+  --color-accent: #c98e63;
+  --color-accent-top: #d99e73;
+  --color-accent-hover: #b87d52;
+  --color-accent-hover-top: #c98e63;
+  --color-accent-foreground: #362304;
 
-  /* Secondary — Ochraceous Salmon */
-  --color-secondary: #d99e73;
-  --color-secondary-hover: #c98e63;
-  --color-secondary-accent: #f5e6dc;
-  --color-secondary-foreground: #362304;
+  /* Secondary — lighter Etruscan Red (less black) */
+  --color-secondary: #dc4a58;
+  --color-secondary-hover: #cc3a48;
+  --color-secondary-accent: #f0c4b8;
+  --color-secondary-foreground: #ffffff;
 
-  /* Success — Artemesia Green */
-  --color-success: #65a98f;
-  --color-success-hover: #549a7e;
-  --color-success-accent: #b3e8c2; /* Glaucous Green */
+  /* Success — Artemesia Green (deeper) */
+  --color-success: #549a7e;
+  --color-success-hover: #458a6e;
+  --color-success-accent: #9cd4ab;
   --color-success-foreground: #ffffff;
 
   /* Error — Carmine Red */
   --color-error: #a10b2b;
   --color-error-hover: #8a0924;
-  --color-error-accent: #ffcfc4; /* Seashell Pink */
+  --color-error-accent: #f0c4b8;
   --color-error-foreground: #ffffff;
 
-  /* Warning — Naples Yellow */
-  --color-warning: #faed8f;
-  --color-warning-hover: #e8dd7a;
-  --color-warning-accent: #f5f5b8; /* Sulpher Yellow */
+  /* Warning — warm amber (fits Ochraceous Salmon / earthy scheme) */
+  --color-warning: #c9944a;
+  --color-warning-hover: #b8843a;
+  --color-warning-accent: #e8d4b8;
   --color-warning-foreground: #362304;
 
   /* Info — Violet Blue */
   --color-info: #202d85;
   --color-info-hover: #1a2570;
-  --color-info-accent: #b8b8ff; /* Grayish Lavender A */
+  --color-info-accent: #9a9ae8;
   --color-info-foreground: #ffffff;
 
-  /* Alert backgrounds (light tints) */
-  --color-success-bg: rgb(101 169 143 / 0.12);
-  --color-warning-bg: rgb(250 237 143 / 0.15);
-  --color-error-bg: rgb(161 11 43 / 0.12);
-  --color-info-bg: rgb(32 45 133 / 0.12);
-  --color-primary-bg: rgb(201 48 62 / 0.12);
-  --color-secondary-bg: rgb(217 158 115 / 0.12);
+  /* Alert backgrounds — stronger tint (match dark-mode 0.2 feel) */
+  --color-success-bg: rgb(84 154 126 / 0.18);
+  --color-warning-bg: rgb(201 148 74 / 0.35);
+  --color-error-bg: rgb(161 11 43 / 0.18);
+  --color-info-bg: rgb(32 45 133 / 0.18);
+  --color-primary-bg: rgb(201 142 99 / 0.18);
+  --color-secondary-bg: rgb(220 74 88 / 0.18);
 
   /* Spacing — MA-based (ratio 1.25) */
   --space-2: 0.5rem;
@@ -87,11 +87,11 @@
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
-  /* Shadows — paper/clay feel */
-  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.06), 0 4px 6px -2px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.03);
-  --shadow-card-hover: 0 4px 6px -2px rgb(0 0 0 / 0.07), 0 10px 15px -3px rgb(0 0 0 / 0.06);
-  --shadow-button: 0 1px 2px rgb(0 0 0 / 0.05), 0 2px 4px rgb(0 0 0 / 0.08);
-  --shadow-button-hover: 0 2px 4px rgb(0 0 0 / 0.06), 0 4px 8px rgb(0 0 0 / 0.1);
+  /* Shadows — stronger for light mode (match dark-mode contrast) */
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.08), 0 4px 6px -2px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-card-hover: 0 4px 6px -2px rgb(0 0 0 / 0.1), 0 10px 15px -3px rgb(0 0 0 / 0.08);
+  --shadow-button: 0 1px 2px rgb(0 0 0 / 0.08), 0 2px 4px rgb(0 0 0 / 0.1);
+  --shadow-button-hover: 0 2px 4px rgb(0 0 0 / 0.1), 0 4px 8px rgb(0 0 0 / 0.12);
 }
 
 .dark {
@@ -103,22 +103,22 @@
   --color-muted: #b5c4b8;
   --color-border: #3d3530;
 
-  /* Primary — Etruscan Red (lifted) */
-  --color-primary: #d9404e;
-  --color-primary-hover: #e9505e;
-  --color-primary-accent: #4a2024;
-  --color-primary-foreground: #ffffff;
-  --color-accent: #d9404e;
-  --color-accent-top: #e9505e;
-  --color-accent-hover: #e9505e;
-  --color-accent-hover-top: #e9505e;
-  --color-accent-foreground: #ffffff;
+  /* Primary — Ochraceous Salmon (lifted) */
+  --color-primary: #e0ae84;
+  --color-primary-hover: #e8be94;
+  --color-primary-accent: #3d3025;
+  --color-primary-foreground: #1a1510;
+  --color-accent: #e0ae84;
+  --color-accent-top: #e8be94;
+  --color-accent-hover: #e8be94;
+  --color-accent-hover-top: #e8be94;
+  --color-accent-foreground: #1a1510;
 
-  /* Secondary — Ochraceous Salmon */
-  --color-secondary: #e0ae84;
-  --color-secondary-hover: #e8be94;
-  --color-secondary-accent: #3d3025;
-  --color-secondary-foreground: #1a1510;
+  /* Secondary — lighter Etruscan Red */
+  --color-secondary: #e85866;
+  --color-secondary-hover: #f0606e;
+  --color-secondary-accent: #4a2024;
+  --color-secondary-foreground: #ffffff;
 
   /* Success — Artemesia Green */
   --color-success: #75b99f;
@@ -132,10 +132,10 @@
   --color-error-accent: #3d1520;
   --color-error-foreground: #ffffff;
 
-  /* Warning — Naples Yellow */
-  --color-warning: #faf09f;
-  --color-warning-hover: #faf8a8;
-  --color-warning-accent: #4a4520;
+  /* Warning — warm amber (lifted) */
+  --color-warning: #e8b84a;
+  --color-warning-hover: #f0c858;
+  --color-warning-accent: #4a4020;
   --color-warning-foreground: #1a1510;
 
   /* Info — Violet Blue */
@@ -146,11 +146,11 @@
 
   /* Alert backgrounds (dark) */
   --color-success-bg: rgb(117 185 159 / 0.2);
-  --color-warning-bg: rgb(250 240 159 / 0.2);
+  --color-warning-bg: rgb(232 184 74 / 0.35);
   --color-error-bg: rgb(184 45 77 / 0.2);
   --color-info-bg: rgb(74 93 165 / 0.2);
-  --color-primary-bg: rgb(217 64 78 / 0.2);
-  --color-secondary-bg: rgb(224 174 132 / 0.2);
+  --color-primary-bg: rgb(224 174 132 / 0.2);
+  --color-secondary-bg: rgb(232 88 102 / 0.2);
 
   /* Shadows — darker */
   --shadow-card: 0 1px 3px rgb(0 0 0 / 0.2), 0 4px 6px -2px rgb(0 0 0 / 0.15);
@@ -208,12 +208,55 @@
   }
 }
 
-/* Select chevron */
+/* Select chevron — light: darker muted; dark: lighter muted */
 .ui-select-chevron {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%239fc2b2' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%235c7a6d' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
   background-position: right 0.5rem center;
   background-size: 1.5em 1.5em;
   padding-right: 2.5rem;
+}
+.dark .ui-select-chevron {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23b5c4b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+}
+
+/* UiSelect dropdown item — hover (mouse) and highlighted (keyboard) */
+.ui-select-item:hover,
+.ui-select-item.ui-select-item-highlighted {
+  background-color: color-mix(in srgb, var(--color-muted) 20%, transparent);
+}
+
+/* UiSelect dropdown transition */
+.ui-select-enter-active,
+.ui-select-leave-active {
+  transition: opacity var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out);
+}
+.ui-select-enter-from,
+.ui-select-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+.ui-select-enter-to,
+.ui-select-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* UiTabs panel transition */
+.ui-tabs-panel-enter-active,
+.ui-tabs-panel-leave-active {
+  transition: opacity var(--duration-normal) var(--ease-out),
+    transform var(--duration-normal) var(--ease-out);
+}
+.ui-tabs-panel-enter-from,
+.ui-tabs-panel-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
+.ui-tabs-panel-enter-to,
+.ui-tabs-panel-leave-from {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Respect reduced motion */

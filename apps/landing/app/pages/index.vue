@@ -23,7 +23,7 @@ const features = [
   },
   {
     title: 'theme',
-    description: 'custom theme with dark mode. still tweaking the lavender.',
+    description: 'Sanzo Wada–inspired palette. warm & earthy, with dark mode.',
   },
 ];
 </script>

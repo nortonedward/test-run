@@ -9,9 +9,9 @@ const tabs = [
 </script>
 
 <template>
-  <UiTabs v-model="active" :tabs="tabs" class="max-w-md">
+  <UiTabs v-model="active" :tabs="tabs" variant="underline" class="max-w-md">
     <template #one>
-      <p>Content for tab one.</p>
+      <p>Content for tab one. The underline slides when switching.</p>
     </template>
     <template #two>
       <p>Content for tab two.</p>

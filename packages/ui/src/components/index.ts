@@ -6,7 +6,7 @@ export { default as UiLink } from './UiLink.vue';
 export { default as UiInput } from './UiInput.vue';
 export { default as UiContainer } from './UiContainer.vue';
 export { default as UiStack } from './UiStack.vue';
-export { default as UiSelect } from './UiSelect.vue';
+export { default as UiSelect, type SelectItem } from './UiSelect.vue';
 export { default as UiCheckbox } from './UiCheckbox.vue';
 export { default as UiRadio } from './UiRadio.vue';
 export { default as UiAlert } from './UiAlert.vue';

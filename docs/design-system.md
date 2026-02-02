@@ -10,7 +10,7 @@ This document is the contract for the component library. No code yet; it defines
 
 The design system is informed by Japanese aesthetic tradition. The **API stays product-facing**—no literal element names (Wood, Fire, etc.) in code. The palette and motion values are derived from these principles and documented here.
 
-- **Sanzo Wada Bundle A:** Warm & Earthy. Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward. Surfaces: Ivory Buff, Fawn, Mineral Gray. Primary: Etruscan Red. Secondary: Ochraceous Salmon.
+- **Sanzo Wada Bundle A:** Warm & Earthy. Ivory Buff, Etruscan Red, Ochraceous Salmon — serene, art-forward. Surfaces: off-white, Fawn, Mineral Gray. Primary: Ochraceous Salmon (warm coral, distinct from error). Secondary: Etruscan Red.
 - **MA (間):** Meaningful emptiness; the "pause" between elements. Spacing favors breathing room; default padding avoids cramped layouts.
 - **Wabi-sabi:** Imperfection, natural texture, subtle depth. Soft gradients, layered shadows, organic radii—not flat or harshly geometric.
 - **Yūgen:** Subtle depth. Transitions on hover/focus (lift, shadow, color) feel alive but calm.
@@ -34,10 +34,10 @@ Palette derived from **Sanzo Wada's A Dictionary of Color Combinations Vol. 2** 
 
 | Token                                | Role                    | Sanzo Wada source                | Notes                             |
 | ------------------------------------ | ----------------------- | -------------------------------- | --------------------------------- |
-| `--color-primary` / `--color-accent` | Main CTA                | Etruscan Red                     | Bold, art-forward                  |
-| `--color-primary-accent`             | Primary soft variant    | Seashell Pink                    | Backgrounds, borders               |
-| `--color-secondary`                  | Muted / outline actions | Ochraceous Salmon               | Warm earth                         |
-| `--color-secondary-accent`           | Secondary soft variant  | Light salmon tint               | Backgrounds, borders               |
+| `--color-primary` / `--color-accent` | Main CTA                | Ochraceous Salmon                | Warm coral, distinct from error     |
+| `--color-primary-accent`             | Primary soft variant    | Light salmon tint                | Backgrounds, borders               |
+| `--color-secondary`                  | Secondary actions       | Etruscan Red                     | Bold accent                         |
+| `--color-secondary-accent`           | Secondary soft variant  | Seashell Pink                    | Backgrounds, borders               |
 | `--color-success`                    | Positive, done          | Artemesia Green                 | Calming sage                       |
 | `--color-success-accent`             | Success soft variant    | Glaucous Green                  | Backgrounds, borders              |
 | `--color-error`                      | Danger, invalid         | Carmine Red                     | Bold                               |

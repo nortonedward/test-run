@@ -1,13 +1,13 @@
 # Colors & Themes
 
-The palette is **Sanzo Wada Bundle A: Warm & Earthy** — Ivory Buff, Etruscan Red, Ochraceous Salmon.
+The palette is **Sanzo Wada Bundle A: Warm & Earthy** — off-white, Etruscan Red, Ochraceous Salmon. Primary (main CTA) is Ochraceous Salmon to avoid confusion with error red.
 
 ## Light theme
 
 ### Surfaces
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Background" token="--color-background" description="Ivory Buff — page background" />
+  <ColorSwatch name="Background" token="--color-background" description="Off-white — page background" />
   <ColorSwatch name="Surface" token="--color-surface" description="Cards, panels" />
   <ColorSwatch name="Foreground" token="--color-foreground" description="Vandyke Brown — primary text" />
   <ColorSwatch name="Muted" token="--color-muted" description="Mineral Gray — secondary text" />
@@ -17,7 +17,7 @@ The palette is **Sanzo Wada Bundle A: Warm & Earthy** — Ivory Buff, Etruscan R
 ### Primary & accent
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Primary / Accent" token="--color-accent" description="Etruscan Red — main CTA" />
+  <ColorSwatch name="Primary / Accent" token="--color-accent" description="Ochraceous Salmon — main CTA" />
   <ColorSwatch name="Accent Hover" token="--color-accent-hover" />
   <ColorSwatch name="Accent Foreground" token="--color-accent-foreground" description="Text on accent" />
 </UiStack>
@@ -25,10 +25,10 @@ The palette is **Sanzo Wada Bundle A: Warm & Earthy** — Ivory Buff, Etruscan R
 ### Semantic colors (base + accent)
 
 <UiStack gap="4" direction="horizontal" class="flex-wrap">
-  <ColorSwatch name="Primary" token="--color-primary" description="Etruscan Red" />
-  <ColorSwatch name="Primary accent" token="--color-primary-accent" description="Seashell Pink" />
-  <ColorSwatch name="Secondary" token="--color-secondary" description="Ochraceous Salmon" />
-  <ColorSwatch name="Secondary accent" token="--color-secondary-accent" description="Light salmon" />
+  <ColorSwatch name="Primary" token="--color-primary" description="Ochraceous Salmon" />
+  <ColorSwatch name="Primary accent" token="--color-primary-accent" description="Light salmon tint" />
+  <ColorSwatch name="Secondary" token="--color-secondary" description="Etruscan Red" />
+  <ColorSwatch name="Secondary accent" token="--color-secondary-accent" description="Seashell Pink" />
   <ColorSwatch name="Success" token="--color-success" description="Artemesia Green" />
   <ColorSwatch name="Success accent" token="--color-success-accent" description="Glaucous Green" />
   <ColorSwatch name="Error" token="--color-error" description="Carmine Red" />
@@ -67,10 +67,10 @@ Toggle dark mode in the nav bar to see the dark palette. The same semantic token
 
 | Token      | Light     | Dark      |
 | ---------- | --------- | --------- |
-| Background | `#ebd999` | `#1a1510` |
+| Background | `#fafaf9` | `#1a1510` |
 | Surface    | `#fffef9` | `#2a241c` |
 | Foreground | `#362304` | `#ebe5d8` |
-| Accent     | `#c9303e` | `#d9404e` |
+| Accent     | `#c98e63` | `#e0ae84` |
 
 ## Overriding
 

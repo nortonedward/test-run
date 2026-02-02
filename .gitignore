@@ -25,6 +25,9 @@ pnpm-debug.log*
 # VitePress cache
 docs/.vitepress/cache/
 
+# Storybook build output
+storybook-static/
+
 # Misc
 .DS_Store
 .fleet

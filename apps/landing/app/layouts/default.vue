@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen flex-col">
     <header
-      class="bg-surface/80 flex items-center justify-between border-b border-border px-4 py-3 shadow-header backdrop-blur-sm dark:shadow-header-dark sm:px-6"
+      class="flex items-center justify-between border-b-2 border-primary/15 bg-surface/95 px-4 py-3 shadow-header backdrop-blur-sm dark:border-primary/25 dark:shadow-header-dark sm:px-6"
     >
       <NuxtLink to="/" class="text-lg font-semibold text-foreground">
         {{ siteName }}

@@ -7,8 +7,9 @@
     "build:ui": "pnpm --filter @cursor-run/ui build",
     "build:landing": "pnpm --filter landing build",
     "build:playground": "pnpm --filter playground build",
-    "dev": "pnpm --filter landing dev",
+    "dev": "concurrently -n ui,landing -c blue,green \"pnpm --filter @cursor-run/ui dev\" \"pnpm --filter landing dev\"",
     "dev:landing": "pnpm --filter landing dev",
+    "dev:ui": "pnpm --filter @cursor-run/ui dev",
     "dev:playground": "pnpm --filter playground dev",
     "story:dev": "pnpm --filter @cursor-run/ui story:dev",
     "docs:gen": "node scripts/generate-docgen.mjs",
@@ -18,12 +19,12 @@
     "format": "prettier --write ."
   },
   "devDependencies": {
-    "concurrently": "^9.1.2",
     "@cursor-run/ui": "workspace:*",
-    "@nuxt/module-builder": "^0.6.0",
+    "@nuxt/module-builder": "^1.0.2",
+    "concurrently": "^9.1.2",
     "prettier": "^3.8.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "vue-docgen-api": "^4.79.2",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vue-docgen-api": "^4.79.2"
   }
 }

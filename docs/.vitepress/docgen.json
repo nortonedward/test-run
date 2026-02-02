@@ -220,6 +220,18 @@
         "description": "Bound value for v-model."
       },
       {
+        "name": "items",
+        "type": "Array",
+        "default": "-",
+        "description": "Options to display. Each must have value and label."
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "'Choose...'",
+        "description": "Placeholder when nothing selected."
+      },
+      {
         "name": "disabled",
         "type": "boolean",
         "default": "-",

@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const variantClasses = {
   success: 'border-success text-success [background:var(--color-success-bg)]',
-  warning: 'border-warning text-warning [background:var(--color-warning-bg)]',
+  warning: 'border-warning text-warning-foreground dark:text-foreground [background:var(--color-warning-bg)]',
   error: 'border-error text-error [background:var(--color-error-bg)]',
   info: 'border-info text-info [background:var(--color-info-bg)]',
 };

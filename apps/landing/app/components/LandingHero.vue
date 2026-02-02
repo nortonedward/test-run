@@ -10,7 +10,7 @@ defineProps<Props>();
 </script>
 
 <template>
-  <section class="py-16 sm:py-24">
+  <section class="bg-primary-accent/10 py-16 sm:py-24">
     <div class="mx-auto max-w-3xl text-center">
       <UiHeading :level="1" :muted="subtext" class="mb-8">
         {{ headline }}
