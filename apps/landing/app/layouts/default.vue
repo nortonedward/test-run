@@ -7,7 +7,6 @@
         {{ siteName }}
       </NuxtLink>
       <div class="flex items-center gap-2">
-        <UiButton to="/demo" variant="secondary" size="sm"> demo </UiButton>
         <UiButton variant="secondary" size="sm" class="p-2.5" aria-label="Toggle dark mode" @click="toggle">
           <Icon :name="isDark ? 'lucide:sun' : 'lucide:moon'" class="size-5" aria-hidden />
         </UiButton>
