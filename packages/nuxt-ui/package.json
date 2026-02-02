@@ -1,0 +1,33 @@
+{
+  "name": "@cursor-run/nuxt-ui",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/module.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/module.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build build",
+    "dev": "nuxt-module-build build --watch",
+    "prepack": "nuxt-module-build build"
+  },
+  "dependencies": {
+    "@cursor-run/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^0.6.0",
+    "nuxt": "^4.3.0"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0 || ^4.0.0",
+    "@nuxt/kit": "^3.0.0 || ^4.0.0"
+  }
+}

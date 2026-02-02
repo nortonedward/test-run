@@ -3,32 +3,27 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "format": "prettier --write .",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/eslint": "1.13.0",
-    "@nuxt/fonts": "0.13.0",
-    "@nuxt/icon": "2.2.1",
-    "@nuxt/image": "2.0.0",
-    "@nuxtjs/tailwindcss": "^6.14.0",
-    "@pinia/nuxt": "^0.11.3",
-    "@vueuse/nuxt": "^14.2.0",
-    "clsx": "^2.1.1",
-    "eslint": "^9.39.2",
-    "nuxt": "^4.3.0",
-    "pinia": "^3.0.4",
-    "tailwind-merge": "^3.4.0",
-    "vue": "^3.5.27",
-    "vue-router": "^4.6.4",
-    "zod": "^4.3.6"
+    "build": "pnpm -r build",
+    "build:ui": "pnpm --filter @cursor-run/ui build",
+    "build:landing": "pnpm --filter landing build",
+    "build:playground": "pnpm --filter playground build",
+    "dev": "pnpm --filter landing dev",
+    "dev:landing": "pnpm --filter landing dev",
+    "dev:playground": "pnpm --filter playground dev",
+    "story:dev": "pnpm --filter @cursor-run/ui story:dev",
+    "docs:gen": "node scripts/generate-docgen.mjs",
+    "docs:dev": "pnpm docs:gen && vitepress dev docs",
+    "dev:docs": "pnpm docs:gen && concurrently -n docs,story -c blue,green \"vitepress dev docs\" \"pnpm story:dev\"",
+    "docs:build": "pnpm docs:gen && vitepress build docs",
+    "format": "prettier --write ."
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
+    "@cursor-run/ui": "workspace:*",
+    "@nuxt/module-builder": "^0.6.0",
     "prettier": "^3.8.1",
-    "prettier-plugin-tailwindcss": "^0.7.2"
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "vue-docgen-api": "^4.79.2",
+    "vitepress": "^1.6.4"
   }
 }

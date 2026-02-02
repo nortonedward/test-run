@@ -1,0 +1,278 @@
+{
+  "UiButton": {
+    "props": [
+      {
+        "name": "variant",
+        "type": "union",
+        "default": "'primary'",
+        "description": "Primary action (accent); secondary is outline."
+      },
+      {
+        "name": "size",
+        "type": "union",
+        "default": "'md'",
+        "description": "Size affects padding and text scale."
+      },
+      {
+        "name": "type",
+        "type": "union",
+        "default": "'button'",
+        "description": "Button type when rendered as native button."
+      },
+      {
+        "name": "to",
+        "type": "string",
+        "default": "-",
+        "description": "Internal link destination (used as href when no router)."
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "-",
+        "description": "External link destination."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction and reduces opacity."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiCard": {
+    "props": [
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiHeading": {
+    "props": [
+      {
+        "name": "level",
+        "type": "union",
+        "default": "1",
+        "description": "Heading level 1–6."
+      },
+      {
+        "name": "muted",
+        "type": "string",
+        "default": "-",
+        "description": "Optional muted subtext shown below the heading."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": ""
+      }
+    ]
+  },
+  "UiLink": {
+    "props": [
+      {
+        "name": "to",
+        "type": "string",
+        "default": "-",
+        "description": "Internal link destination."
+      },
+      {
+        "name": "href",
+        "type": "string",
+        "default": "-",
+        "description": "External link URL."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiInput": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "-",
+        "description": "Bound value for v-model."
+      },
+      {
+        "name": "type",
+        "type": "string",
+        "default": "'text'",
+        "description": "Input type (text, email, password, etc.)."
+      },
+      {
+        "name": "placeholder",
+        "type": "string",
+        "default": "-",
+        "description": "Placeholder text."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiContainer": {
+    "props": [
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiStack": {
+    "props": [
+      {
+        "name": "direction",
+        "type": "union",
+        "default": "'vertical'",
+        "description": "Vertical or horizontal layout."
+      },
+      {
+        "name": "gap",
+        "type": "union",
+        "default": "4",
+        "description": "Gap between children (uses --space-* tokens)."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": ""
+      }
+    ]
+  },
+  "UiSelect": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "-",
+        "description": "Bound value for v-model."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiCheckbox": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "boolean",
+        "default": "-",
+        "description": "Bound checked state for v-model."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiRadio": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "-",
+        "description": "Bound value for v-model."
+      },
+      {
+        "name": "value",
+        "type": "string",
+        "default": "-",
+        "description": "Value of this radio option."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiAlert": {
+    "props": [
+      {
+        "name": "variant",
+        "type": "union",
+        "default": "'info'",
+        "description": "Semantic variant (success, warning, error, info)."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiTabs": {
+    "props": [
+      {
+        "name": "tabs",
+        "type": "Array",
+        "default": "-",
+        "description": "Array of tab definitions."
+      },
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "''",
+        "description": "Bound active tab id for v-model."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  }
+}

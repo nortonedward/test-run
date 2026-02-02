@@ -1,0 +1,210 @@
+/*
+  Design tokens — Japanese-inspired (和色, MA, wabi-sabi, Seijaku)
+  Semantic names only. See docs/design-system.md for philosophy.
+*/
+
+:root {
+  /* Surfaces — 和紙 washi */
+  --color-background: #f7f4f0;
+  --color-background-top: #f0ebe3;
+  --color-surface: #fffefc;
+  --color-foreground: #27221f; /* 墨 sumi */
+  --color-muted: #5c4a42; /* 茶 cha */
+  --color-border: #e0d9d2;
+
+  /* Primary / accent — 朱 shu (vermillion) */
+  --color-primary: #b54a3a;
+  --color-primary-hover: #9a3a2e;
+  --color-primary-foreground: #ffffff;
+  --color-accent: #b54a3a;
+  --color-accent-top: #c85a4a;
+  --color-accent-hover: #9a3a2e;
+  --color-accent-hover-top: #a84a3e;
+  --color-accent-foreground: #ffffff;
+
+  /* Secondary — muted 墨 / 茶 */
+  --color-secondary: #5c4a42;
+  --color-secondary-hover: #4a3a32;
+  --color-secondary-foreground: #ffffff;
+
+  /* Success — 若緑 wakamidori */
+  --color-success: #2d8a5e;
+  --color-success-hover: #247a50;
+  --color-success-foreground: #ffffff;
+
+  /* Error — 蘇芳 su'ō (repurposed from old success) */
+  --color-error: #7e2639;
+  --color-error-hover: #6a1f30;
+  --color-error-foreground: #ffffff;
+
+  /* Warning — 山吹 yamabuki */
+  --color-warning: #e6a23c;
+  --color-warning-hover: #d4922a;
+  --color-warning-foreground: #27221f;
+
+  /* Info — 青磁 seiji */
+  --color-info: #268785;
+  --color-info-hover: #1e6b6a;
+  --color-info-foreground: #ffffff;
+
+  /* Alert backgrounds (light tints for readability) */
+  --color-success-bg: rgb(45 138 94 / 0.12);
+  --color-warning-bg: rgb(230 162 60 / 0.12);
+  --color-error-bg: rgb(126 38 57 / 0.12);
+  --color-info-bg: rgb(38 135 133 / 0.12);
+
+  /* Spacing — MA-based (ratio 1.25) */
+  --space-2: 0.5rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-48: 12rem;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --ease-out: ease-out;
+  --ease-in-out: ease-in-out;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Shadows — paper/clay feel */
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.06), 0 4px 6px -2px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.03);
+  --shadow-card-hover: 0 4px 6px -2px rgb(0 0 0 / 0.07), 0 10px 15px -3px rgb(0 0 0 / 0.06);
+  --shadow-button: 0 1px 2px rgb(0 0 0 / 0.05), 0 2px 4px rgb(0 0 0 / 0.08);
+  --shadow-button-hover: 0 2px 4px rgb(0 0 0 / 0.06), 0 4px 8px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  /* Surfaces — 墨 sumi / 黒色 kokushoku */
+  --color-background: #171412;
+  --color-background-top: #1c1816;
+  --color-surface: #252019;
+  --color-foreground: #f5f0e8;
+  --color-muted: #a8988c;
+  --color-border: #3d352e;
+
+  /* Primary / accent — 朱 */
+  --color-primary: #d45a4a;
+  --color-primary-hover: #e87a6a;
+  --color-primary-foreground: #fff8f5;
+  --color-accent: #d45a4a;
+  --color-accent-top: #e06a5a;
+  --color-accent-hover: #e87a6a;
+  --color-accent-hover-top: #e06a5a;
+  --color-accent-foreground: #fff8f5;
+
+  /* Secondary */
+  --color-secondary: #6b5a52;
+  --color-secondary-hover: #7d6c64;
+  --color-secondary-foreground: #f5f0e8;
+
+  /* Success */
+  --color-success: #3da672;
+  --color-success-hover: #4ab67d;
+  --color-success-foreground: #ffffff;
+
+  /* Error — 蘇芳 */
+  --color-error: #9a3648;
+  --color-error-hover: #b04558;
+  --color-error-foreground: #fff8f5;
+
+  /* Warning */
+  --color-warning: #e6a23c;
+  --color-warning-hover: #f0b050;
+  --color-warning-foreground: #27221f;
+
+  /* Info */
+  --color-info: #3a9d9b;
+  --color-info-hover: #4aadab;
+  --color-info-foreground: #ffffff;
+
+  /* Alert backgrounds (dark) */
+  --color-success-bg: rgb(61 166 114 / 0.2);
+  --color-warning-bg: rgb(230 162 60 / 0.2);
+  --color-error-bg: rgb(154 54 72 / 0.2);
+  --color-info-bg: rgb(58 157 155 / 0.2);
+
+  /* Shadows — darker */
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.2), 0 4px 6px -2px rgb(0 0 0 / 0.15);
+  --shadow-card-hover: 0 4px 6px -2px rgb(0 0 0 / 0.25), 0 10px 15px -3px rgb(0 0 0 / 0.2);
+  --shadow-button: 0 1px 2px rgb(0 0 0 / 0.2), 0 2px 4px rgb(0 0 0 / 0.25);
+  --shadow-button-hover: 0 2px 4px rgb(0 0 0 / 0.25), 0 4px 8px rgb(0 0 0 / 0.3);
+}
+
+/* Page gradient */
+.theme-page {
+  background: linear-gradient(180deg, var(--color-background-top) 0%, var(--color-background) 25%, var(--color-background) 100%);
+}
+
+/* Keyframes — namespaced to avoid collisions */
+@keyframes ui-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ui-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+@keyframes ui-scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ui-breathe {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+/* Select chevron */
+.ui-select-chevron {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%235c4a42' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
