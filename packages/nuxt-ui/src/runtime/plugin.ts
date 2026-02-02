@@ -1,3 +1,4 @@
+import { defineNuxtPlugin, useRuntimeConfig } from '#imports';
 import CursorRunUi from '@cursor-run/ui';
 
 export default defineNuxtPlugin((nuxtApp) => {

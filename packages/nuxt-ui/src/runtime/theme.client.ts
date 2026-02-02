@@ -1,3 +1,5 @@
+import { defineNuxtPlugin } from '#imports';
+
 const STORAGE_KEY = 'ui-theme';
 
 function getStoredTheme(): 'light' | 'dark' | null {

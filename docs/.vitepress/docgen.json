@@ -1,4 +1,118 @@
 {
+  "UiAvatarUpload": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "-",
+        "description": "Current image URL or data URL (for v-model)."
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "-",
+        "description": "Display name for initials fallback."
+      },
+      {
+        "name": "size",
+        "type": "union",
+        "default": "'md'",
+        "description": "Size of the avatar (sm, md, lg)."
+      },
+      {
+        "name": "maxSize",
+        "type": "number",
+        "default": "524288",
+        "description": "Max file size in bytes (default: 512KB)."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiAvatar": {
+    "props": [
+      {
+        "name": "src",
+        "type": "string",
+        "default": "-",
+        "description": "Image URL. When absent, falls back to initials."
+      },
+      {
+        "name": "alt",
+        "type": "string",
+        "default": "-",
+        "description": "Alt text for the image."
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "-",
+        "description": "Display name — used to derive initials when src is absent (e.g. \"John Doe\" → \"JD\")."
+      },
+      {
+        "name": "initials",
+        "type": "string",
+        "default": "-",
+        "description": "Explicit initials when name is not suitable (e.g. \"JD\"). Overrides name-derived initials."
+      },
+      {
+        "name": "size",
+        "type": "union",
+        "default": "'md'",
+        "description": "Size of the avatar (sm, md, lg)."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiAuthor": {
+    "props": [
+      {
+        "name": "avatar",
+        "type": "string",
+        "default": "-",
+        "description": "Avatar image URL. Falls back to initials from name when absent."
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "default": "-",
+        "description": "Display name (e.g. username or \"John Doe\")."
+      },
+      {
+        "name": "subtitle",
+        "type": "string",
+        "default": "-",
+        "description": "Optional subtitle (e.g. timestamp, role)."
+      },
+      {
+        "name": "size",
+        "type": "union",
+        "default": "'md'",
+        "description": "Size of avatar and text scale (sm, md, lg)."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
   "UiButton": {
     "props": [
       {
@@ -91,6 +205,16 @@
       }
     ]
   },
+  "UiComposeBar": {
+    "props": [
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
   "UiCard": {
     "props": [
       {
@@ -136,6 +260,46 @@
         "type": "string",
         "default": "-",
         "description": "External link URL."
+      },
+      {
+        "name": "class",
+        "type": "string",
+        "default": "-",
+        "description": "Additional classes merged via cn()."
+      }
+    ]
+  },
+  "UiImageUpload": {
+    "props": [
+      {
+        "name": "modelValue",
+        "type": "string",
+        "default": "-",
+        "description": "Current image URL or data URL (for v-model)."
+      },
+      {
+        "name": "accept",
+        "type": "string",
+        "default": "'image/*'",
+        "description": "Accept attribute for file input."
+      },
+      {
+        "name": "maxSize",
+        "type": "number",
+        "default": "2097152",
+        "description": "Max file size in bytes (default: 2MB)."
+      },
+      {
+        "name": "aspect",
+        "type": "union",
+        "default": "'free'",
+        "description": "Aspect ratio hint: square, wide, tall, free."
+      },
+      {
+        "name": "disabled",
+        "type": "boolean",
+        "default": "-",
+        "description": "Disables interaction."
       },
       {
         "name": "class",

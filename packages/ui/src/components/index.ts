@@ -1,5 +1,11 @@
+export { default as UiAvatar } from './UiAvatar.vue';
+export { default as UiAvatarUpload } from './UiAvatarUpload.vue';
+export { default as UiAuthor } from './UiAuthor.vue';
 export { default as UiButton } from './UiButton.vue';
+export { default as UiComposeBar } from './UiComposeBar.vue';
 export { default as UiIconButton } from './UiIconButton.vue';
+export { default as UiImagePicker } from './UiImagePicker.vue';
+export { default as UiImageUpload } from './UiImageUpload.vue';
 export { default as UiCard } from './UiCard.vue';
 export { default as UiHeading } from './UiHeading.vue';
 export { default as UiLink } from './UiLink.vue';
