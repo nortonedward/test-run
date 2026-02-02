@@ -21,7 +21,7 @@ coverage
 
 # pnpm
 pnpm-debug.log*
-
+gi
 # VitePress cache
 docs/.vitepress/cache/
 
